@@ -1,0 +1,19 @@
+@use "abstracts" as *;
+
+//---------------------------------------------------------------------------
+//	Section
+//---------------------------------------------------------------------------
+
+.l-section {
+  margin-block-start: var(--spacer-section);
+}
+
+//---------------------------------------------------------------------------
+//	Container
+//---------------------------------------------------------------------------
+
+.l-container {
+  max-width: calc(var(--container-max-width) + (var(--container-padding) * 2));
+  padding-inline: var(--container-padding);
+  margin-inline: auto;
+}

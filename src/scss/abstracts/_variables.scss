@@ -1,0 +1,82 @@
+@use "sass:color";
+@use "functions" as *;
+
+//---------------------------------------------------------------------------
+//	Typography
+//---------------------------------------------------------------------------
+
+$font-family: "", Arial, Helvetica, sans-serif;
+
+$font-size-base: 16px;
+
+//---------------------------------------------------------------------------
+//	Colors
+//---------------------------------------------------------------------------
+
+$color-branding-01: "";
+
+// $color-grey-900 etc.
+
+//---------------------------------------------------------------------------
+//  Breakpoints
+//---------------------------------------------------------------------------
+
+$break-grid-2xs: em(375px);
+$break-grid-xs: em(460px);
+$break-grid-sm: em(580px);
+$break-grid-md: em(744px);
+$break-grid-lg: em(1024px);
+$break-grid-xl: em(1280px);
+$break-grid-2xl: em(1400px);
+$break-grid-3xl: em(1600px);
+
+//---------------------------------------------------------------------------
+//	Layout
+//---------------------------------------------------------------------------
+
+$l-container-max-width: rem(1920px);
+
+//---------------------------------------------------------------------------
+//	Border Radii
+//---------------------------------------------------------------------------
+
+$border-radius-01: rem(6px);
+$border-radius-02: rem(12px);
+
+$border-radius-default: $border-radius-01;
+
+//---------------------------------------------------------------------------
+//	Transitions
+//---------------------------------------------------------------------------
+
+$transition-default: 0.2s ease-in-out;
+$transition-medium: 0.3s ease-in-out;
+$transition-slow: 0.4s ease-in-out;
+
+$transition-cubic-bezier: cubic-bezier(0.16, 1, 0.3, 1);
+$transition-cubic-01: 1s $transition-cubic-bezier;
+$transition-cubic-02: 1.2s $transition-cubic-bezier;
+
+//---------------------------------------------------------------------------
+//	Root Variables
+//---------------------------------------------------------------------------
+
+:root {
+  --container-padding: #{rem(20px)};
+  --container-max-width: #{rem(1520px)};
+
+  --spacer-01: #{rem(32px)};
+  --spacer-02: #{rem(48px)};
+  --spacer-03: #{rem(64px)};
+  --spacer-04: #{rem(128px)};
+  --spacer-05: #{rem(160px)};
+  --spacer-section: var(--spacer-03);
+}
+
+@media (width >= $break-grid-lg) {
+  :root {
+    --container-padding: #{rem(32px)};
+
+    --spacer-section: var(--spacer-04);
+  }
+}
