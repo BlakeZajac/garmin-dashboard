@@ -1,5 +1,5 @@
 // Base
-// @use "base/reset";
+@use "base/reset";
 // @use "base/base";
 // @use "base/layout";
 // @use "base/forms";
@@ -11,7 +11,7 @@
 // Components
 
 // Framework components
-@use "../components/**/_style.scss" as *;
+// @use "../components/**/_style.scss" as *;
 
 // Layout
 // @use "layout/site-main";
